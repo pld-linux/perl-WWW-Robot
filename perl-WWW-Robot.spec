@@ -41,7 +41,7 @@ dodaj±c je do listy URLi, które bêd± odwiedzane.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
