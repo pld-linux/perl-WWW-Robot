@@ -34,7 +34,7 @@ robotów sieciowych i innych sieciowych agentów).
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
