@@ -18,7 +18,7 @@ BuildRequires:	perl-URI
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-Robot
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 WWW-Robot - configurable web traversal engine (for web robots & agents).
