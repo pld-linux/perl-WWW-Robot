@@ -6,7 +6,8 @@ Summary(pl):	Modu³ Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów
 Name:		perl-WWW-Robot
 Version:	0.023
 Release:	3
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d26e7580b75fd7f12dce273755ff635e
@@ -47,7 +48,8 @@ dodaj±c je do listy URLi, które bêd± odwiedzane.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
