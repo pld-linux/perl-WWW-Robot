@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Robot
-Summary:	WWW::Robot perl module
-Summary(pl):	Modu³ perla WWW::Robot
+Summary:	WWW::Robot Perl module - configurable web traversal engine
+Summary(pl):	Modu³ perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
 Name:		perl-WWW-Robot
 Version:	0.023
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,15 +22,21 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW::Robot - configurable web traversal engine (for web robots &
-agents).
+The WWW::Robot Perl module implements a configurable web traversal
+engine, for a robot or other web agent. Given an initial web page
+(URL), the Robot will get the contents of that page, and extract all
+links on the page, adding them to a list of URLs to visit.
 
 %description -l pl
-WWW::Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla
-robotów sieciowych i innych sieciowych agentów).
+Modu³ Perla WWW::Robot zawiera konfigurowalny mechanizm analizuj±cy
+zasoby sieciowe, przeznaczony dla robotów i innych agentów sieciowych.
+Po podaniu strony pocz±tkowej (w postaci URLa) Robot pobierze
+zawarto¶æ danej strony oraz wydzieli z niej wszystkie odno¶niki,
+dodaj±c je do listy URLi, które bêd± odwiedzane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%{__perl} -pi -e 's/^(use LWP::RobotUA)( 1.171)(.*)$/$1 1.18$3/' lib/WWW/*.pm
 %patch -p0
 
 %build
