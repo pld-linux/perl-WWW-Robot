@@ -3,7 +3,7 @@ Summary:	WWW-Robot perl module
 Summary(pl):	Modu³ perla WWW-Robot
 Name:		perl-WWW-Robot
 Version:	0.021
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
