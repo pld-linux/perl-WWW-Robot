@@ -3,7 +3,7 @@ Summary:	WWW-Robot perl module
 Summary(pl):	Modu³ perla WWW-Robot
 Name:		perl-WWW-Robot
 Version:	0.022
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -17,6 +17,7 @@ BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
 Obsoletes:	perl-Robot
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
