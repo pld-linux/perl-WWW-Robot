@@ -4,8 +4,8 @@
 Summary:	WWW::Robot perl module
 Summary(pl):	Modu³ perla WWW::Robot
 Name:		perl-WWW-Robot
-Version:	0.022
-Release:	6
+Version:	0.023
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
