@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	WWW
-%define	pnam	Robot
+%define		pdir	WWW
+%define		pnam	Robot
 Summary:	WWW::Robot Perl module - configurable web traversal engine
 Summary(pl):	Modu³ Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
 Name:		perl-WWW-Robot
