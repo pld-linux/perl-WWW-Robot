@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	WWW-Robot perl module
 Summary(pl):	Modu³ perla WWW-Robot
 Name:		perl-WWW-Robot
@@ -9,15 +9,14 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/WWW-Robot-%{version}.tar.gz
 Patch:		perl-WWW-Robot-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-libwww
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-URI
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-libwww
-Requires:	perl-HTML-Tree
-Requires:	perl-HTML-Parser
 Obsoletes:	perl-Robot
 BuildRoot:	/tmp/%{name}-%{version}-root
 
