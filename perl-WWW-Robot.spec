@@ -7,8 +7,8 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/WWW-Robot-%{version}.tar.gz
-Patch:		perl-WWW-Robot-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/WWW-Robot-%{version}.tar.gz
+Patch0:		perl-WWW-Robot-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-libwww
@@ -21,11 +21,12 @@ Obsoletes:	perl-Robot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW-Robot - configurable web traversal engine (for web robots & agents).
+WWW-Robot - configurable web traversal engine (for web robots &
+agents).
 
 %description -l pl
-WWW-Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla robotów
-sieciowych i innych sieciowych agentów).
+WWW-Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla
+robotów sieciowych i innych sieciowych agentów).
 
 %prep
 %setup -q -n WWW-Robot-%{version}
