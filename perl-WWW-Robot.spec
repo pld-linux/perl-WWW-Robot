@@ -2,7 +2,7 @@
 %define	pdir	WWW
 %define	pnam	Robot
 Summary:	WWW::Robot Perl module - configurable web traversal engine
-Summary(pl):	Modu³ perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
+Summary(pl):	Modu³ Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
 Name:		perl-WWW-Robot
 Version:	0.023
 Release:	3
