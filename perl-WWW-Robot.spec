@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Robot
-%include	/usr/lib/rpm/macros.perl
 Summary:	WWW-Robot perl module
 Summary(pl):	Modu³ perla WWW-Robot
 Name:		perl-WWW-Robot
 Version:	0.022
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,7 +29,7 @@ WWW-Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla
 robotów sieciowych i innych sieciowych agentów).
 
 %prep
-%setup -q -n WWW-Robot-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p0
 
 %build
