@@ -1,0 +1,8 @@
+--- examples/poacher~	Thu May  1 14:17:57 1997
++++ examples/poacher	Mon Oct 18 19:12:57 1999
+@@ -1,4 +1,4 @@
+-#!/apps/perl5/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ #-----------------------------------------------------------------------
+ 
