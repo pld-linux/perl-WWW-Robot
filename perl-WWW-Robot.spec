@@ -16,8 +16,6 @@ BuildRequires:	perl-libwww
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 Obsoletes:	perl-Robot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
