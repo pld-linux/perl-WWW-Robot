@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Robot
-Summary:	WWW-Robot perl module
-Summary(pl):	Modu³ perla WWW-Robot
+Summary:	WWW::Robot perl module
+Summary(pl):	Modu³ perla WWW::Robot
 Name:		perl-WWW-Robot
 Version:	0.022
 Release:	6
@@ -21,11 +21,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WWW-Robot - configurable web traversal engine (for web robots &
+WWW::Robot - configurable web traversal engine (for web robots &
 agents).
 
 %description -l pl
-WWW-Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla
+WWW::Robot - konfigurowalny mechanizm analizuj±cy zasoby sieciowe (dla
 robotów sieciowych i innych sieciowych agentów).
 
 %prep
