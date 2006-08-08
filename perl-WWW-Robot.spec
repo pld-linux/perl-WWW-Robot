@@ -38,7 +38,7 @@ dodaj±c je do listy URLi, które bêd± odwiedzane.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %{__perl} -pi -e 's/^(use LWP::RobotUA)( 1.171)(.*)$/$1 1.18$3/' lib/WWW/*.pm
-%patch -p0
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL \
