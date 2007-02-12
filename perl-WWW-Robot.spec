@@ -2,7 +2,7 @@
 %define		pdir	WWW
 %define		pnam	Robot
 Summary:	WWW::Robot Perl module - configurable web traversal engine
-Summary(pl):	Modu³ Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
+Summary(pl.UTF-8):   ModuÅ‚ Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobÃ³w WWW
 Name:		perl-WWW-Robot
 Version:	0.023
 Release:	3
@@ -28,12 +28,12 @@ engine, for a robot or other web agent. Given an initial web page
 (URL), the Robot will get the contents of that page, and extract all
 links on the page, adding them to a list of URLs to visit.
 
-%description -l pl
-Modu³ Perla WWW::Robot zawiera konfigurowalny mechanizm analizuj±cy
-zasoby sieciowe, przeznaczony dla robotów i innych agentów sieciowych.
-Po podaniu strony pocz±tkowej (w postaci URLa) Robot pobierze
-zawarto¶æ danej strony oraz wydzieli z niej wszystkie odno¶niki,
-dodaj±c je do listy URLi, które bêd± odwiedzane.
+%description -l pl.UTF-8
+ModuÅ‚ Perla WWW::Robot zawiera konfigurowalny mechanizm analizujÄ…cy
+zasoby sieciowe, przeznaczony dla robotÃ³w i innych agentÃ³w sieciowych.
+Po podaniu strony poczÄ…tkowej (w postaci URLa) Robot pobierze
+zawartoÅ›Ä‡ danej strony oraz wydzieli z niej wszystkie odnoÅ›niki,
+dodajÄ…c je do listy URLi, ktÃ³re bÄ™dÄ… odwiedzane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
