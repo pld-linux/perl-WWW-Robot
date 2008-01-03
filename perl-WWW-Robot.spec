@@ -9,15 +9,16 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0deb04563e80c1b576ee0b3fdd86f21b
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-libwww
+URL:		http://search.cpan.org/dist/WWW-Robot/
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-libwww
+BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-Robot
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
