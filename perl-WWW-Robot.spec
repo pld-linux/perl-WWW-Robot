@@ -4,13 +4,13 @@
 Summary:	WWW::Robot Perl module - configurable web traversal engine
 Summary(pl.UTF-8):	Moduł Perla WWW::Robot - konfigurowlny mechanizm do analizy zasobów WWW
 Name:		perl-WWW-Robot
-Version:	0.025
+Version:	0.026
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0deb04563e80c1b576ee0b3fdd86f21b
+# Source0-md5:	a58f5cef44e8c6cd2e057821691a6be4
 Patch0:		%{name}-paths.patch
 URL:		http://search.cpan.org/dist/WWW-Robot/
 BuildRequires:	perl-HTML-Tree
